@@ -68,6 +68,19 @@ function App() {
       </div>
 
       <WinnerModal resetGame={resetGame} winner={winner}></WinnerModal>
+
+      <footer>
+        
+
+<footer>
+    <div>
+        <hr/>
+        <span>2024 | AcquaDev. Made by Maximo Cruz</span>
+    </div>
+</footer>
+
+
+      </footer>
     </main>
   )
 }

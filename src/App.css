@@ -39,3 +39,12 @@
 .read-the-docs {
   color: #888;
 }
+
+footer{
+  font-size: .875rem;
+  line-height: 1.25rem;
+  margin-top: 20%;
+  display: block;
+  text-align: center;
+
+}
