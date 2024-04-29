@@ -1,0 +1,140 @@
+:root {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #3a3a3a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #3a3a3a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.board h1 {
+  color: #f0f0f0;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.board button {
+  padding: 12px 20px;
+  margin: 20px;
+  background: #f0f0f0;
+  border: 2px solid #f0f0f0;
+  color: #3a3a3a;
+  width: 140px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.board button:hover {
+  background: #5e0388;
+  border-color: #5e0388;
+  color: #f0f0f0;
+}
+
+.board .game {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: fit-content;
+  position: relative;
+  border-radius: 10px;
+}
+
+.turn .square,
+.winner .square {
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  border-color: transparent;
+}
+
+.square.is-selected {
+  color: #f0f0f0;
+  background: #5e0388;
+}
+
+.winner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.winner .text {
+  background: #3a3a3a;
+  padding: 40px;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner .win {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 48px;
+  color: #f0f0f0;
+  background-color: #3a3a3a;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.square:hover {
+  background-color: #5e0388;
+  color: #f0f0f0;
+}
